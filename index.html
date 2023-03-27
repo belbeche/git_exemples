@@ -6,27 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cours du 27-28/03/2023</title>
+    <link rel="stylesheet" href="css/bootstrap.flatly.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/git.css">
 </head>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Git</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://sharemycode.fr/lundi27">Sharemycode</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/belbeche/git_exemples">Github projet</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
 <body>
     <div class="container">
         <h1>Exemple d'utilisation de Git</h1>
         <ul>
-            <li>git init : permet d'iniliaser un repository git à la racine du dossier</li>
-            <li>git status : permet de traquer les changements liées aux états</li>
-            <li>git commit -m "...." : l'intitulé de la sauvegarde</li>
-            <li>git log : affiche la liste des commits (=sauvegardes)</li>
+            <li><strong>git init</strong> : permet d'iniliaser un repository git à la racine du dossier</li>
+            <li><strong>git status </strong>: permet de traquer les changements liées aux états</li>
+            <li><strong>git commit -m "...."</strong> : l'intitulé de la sauvegarde</li>
+            <li><strong>git log </strong>: affiche la liste des commits (=sauvegardes)</li>
+            <li><strong>git diff </strong>: permet de voir les dernières modifcations</li>
+            <li><strong>git reset HEAD </strong>: enregistre un etat permettant de revenir dessus
+                <div>
+                    <p>
+                        Git reset HEAD est une commande Git qui permet de retirer des fichiers de l'index (ou staging
+                        area) pour annuler un commit précédent ou pour désindexer des modifications qui ont été
+                        préparées pour un commit.
+
+                        L'index est l'espace de travail intermédiaire entre le répertoire de travail (le répertoire
+                        où l'ont travaille sur des fichiers) et l'historique de commit (la série de commits qui ont
+                        été enregistrés dans le dépôt Git).
+                    </p>
+                </div>
+            </li>
+            <li><strong> git reset --hard </strong>: on force la remise à zero, on revient à l'état du commit HEAD en
+                supprimant le code</li>
+            <li><strong>git reset ~1 </strong> : on revient sur l'état précedent du dernier commit sans supprimer le
+                code</li>
+            <li><strong>git add </strong>: pour ajouter des fichiers en attente d'être sauvegardé</li>
+
+            <li><strong>git restore --staged *.html</strong> : on enlève les fichiers en attente d'être sauvegarder</li>
+            <li></li>
             <li></li>
             <li></li>
         </ul>
 
         <blockquote>
+            prénom formateur : Didier <br>
             email formateur : ded.formateur.web@gmail.com
-            <a href="https://sharemycode.fr/lundi27">Listes des commande du lundi 27</a>
         </blockquote>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
 
 </body>
 
