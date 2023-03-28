@@ -25,10 +25,13 @@
                         <a class="nav-link active" href="#">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://sharemycode.fr/lundi27">Sharemycode</a>
+                        <a class="nav-link" href="https://sharemycode.fr/lundi27">Cours du 27/03/2023</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/belbeche/git_exemples">Github projet</a>
+                        <a class="nav-link" href="https://sharemycode.fr/mardi28">Cours du 28/03/2023</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/belbeche/git_exemples">Se projet sur Github</a>
                     </li>
                 </ul>
             </div>
@@ -42,28 +45,16 @@
         <ul>
             <li><strong>git init</strong> : permet d'iniliaser un repository git à la racine du dossier</li>
             <li><strong>git status </strong>: permet de traquer les changements liées aux états</li>
-            <li><strong>git add </strong>: pour ajouter des fichiers en attente d'être sauvegardé</li>
+            <li><strong>git add </strong>: pour ajouter des fichiers en attente d'être sauvegardé (=commit)</li>
             <li><strong>git commit -m "...."</strong> : l'intitulé de la sauvegarde</li>
             <li><strong>git commit -am "..."</strong> : on ajoute les fichiers et on les sauvegarde</li>
             <li><strong>git log </strong>: affiche la liste des commits (=sauvegardes)</li>
-            <li><strong>git diff </strong>: permet de voir les dernières modifcations</li>
+            <li><strong>git diff </strong>: permet de voir les différentes modifcations</li>
             <li><strong>git reset HEAD </strong>: enregistre un etat permettant de revenir dessus
-                <div>
-                    <p>
-                        Git reset HEAD est une commande Git qui permet de retirer des fichiers de l'index (ou staging
-                        area) pour annuler un commit précédent ou pour désindexer des modifications qui ont été
-                        préparées pour un commit.
-
-                        L'index est l'espace de travail intermédiaire entre le répertoire de travail (le répertoire
-                        où l'ont travaille sur des fichiers) et l'historique de commit (la série de commits qui ont
-                        été enregistrés dans le dépôt Git).
-                    </p>
-                </div>
             </li>
             <li><strong> git reset --hard </strong>: on force la remise à zero, on revient à l'état du commit HEAD en
                 supprimant le code</li>
-            <li><strong>git reset ~1 </strong> : on revient sur l'état précedent du dernier commit sans supprimer le
-                code</li>
+            <li><strong>git reset ~1 </strong> : on revient sur l'état précedent du dernier commit avant le HEAD</li>
             <li><strong>git restore --staged *.html</strong> : on enlève les fichiers en attente d'être sauvegarder</li>
             <li><strong>git branch -M</strong>: permet de switcher de branch</li>
             <li><strong>git checkout -b develop</strong> : le gitcheckout permet de basculer d'une branch à une autres,
